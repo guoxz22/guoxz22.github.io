@@ -75,6 +75,23 @@ a:focus-visible {
   color: var(--ink);
 }
 
+.language-toggle {
+  padding: 0;
+  border: 0;
+  color: var(--link);
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  color: #0b3d75;
+}
+
 .intro {
   padding: 2.35rem 0 2rem;
 }
@@ -160,10 +177,6 @@ h3 {
   font-size: 1rem;
 }
 
-.research-list span {
-  color: var(--muted);
-}
-
 .education-list {
   display: grid;
   gap: 0.75rem;
@@ -218,6 +231,7 @@ h3 {
   .site-header {
     align-items: flex-start;
     flex-direction: column;
+    gap: 0.45rem;
   }
 
   .intro {
